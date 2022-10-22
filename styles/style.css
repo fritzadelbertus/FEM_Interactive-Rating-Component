@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+:root {
+    --form-control-color: rebeccapurple;
+    --color-1:hsl(25, 97%, 53%);
+    --color-1:hsl(0, 0%, 100%);
+    --color-1:hsl(217, 12%, 63%);
+    --color-1:hsl(216, 12%, 54%);
+    --color-1:hsl(213, 19%, 18%);
+    --color-1:hsl(216, 12%, 8%);
+    font-size: 4vw;
+}
+@media (min-width: 376px) {
+    :root {
+        font-size: 15px;
+    }
+}
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: hsl(216, 12%, 8%) ;
+    font-family: 'Overpass', sans-serif;
+    display: grid;
+    place-content: center;
+    height: 100vh;
+}
+.top-icon {
+    background-color: hsl(213, 20%, 24%);
+    border-radius: 50%;
+    width: 2.5rem;
+    height: 2.5rem;
+    display: grid;
+    place-content: center;
+    
+}
+h1 {
+    font-size: 1.5rem;
+    color: hsl(0, 0%, 100%);
+    margin: 1rem 0;
+}
+.card > p {
+    color: hsl(217, 12%, 63%);
+    font-size: 0.9rem;
+    line-height: 1.3rem;
+}
+.card {
+    width: 90vw;
+    max-width: 370px;
+    background: linear-gradient(hsl(214, 23%, 19%),hsl(213, 19%, 18%));
+    padding: 2rem;
+    margin: 0 auto;
+    border-radius: 1rem;
+}
+.rating-box {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin: 2rem 0;
+}
+.form-control {
+    position: relative;
+    display: grid;
+    place-content: center;
+}
+.form-control > label {
+    position: absolute;
+    font-size: 0.9rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    display: grid;
+    place-content: center;
+    color: hsl(216, 12%, 54%);
+}
+
+
+input[type="radio"] {
+    appearance: none;
+
+    background-color: hsl(213, 20%, 24%);
+    margin: 0;
+    font: inherit;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+}
+input[type="radio"]:checked {
+    background-color: hsl(217, 12%, 63%);
+}
+input[type="radio"]:checked+label {
+    color: hsl(0, 0%, 100%);
+}
+input[type="radio"]:hover {
+    background-color: hsl(25, 97%, 53%);
+    cursor: pointer;
+}
+input[type="radio"]:hover+label {
+    color: hsl(0, 0%, 100%);
+    cursor: pointer;
+}
+
+button {
+    font-family: 'Overpass', sans-serif;
+    width: 100%;
+    border: none;
+    background-color: hsl(25, 97%, 53%);
+    color: hsl(0, 0%, 100%);
+    font-size: 0.9rem;
+    padding: 1rem;
+    border-radius: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.15rem;
+}
+button:hover {
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(25, 97%, 53%);
+    cursor: pointer;
+}
+
+
+.thank-you-card {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+.rating-text-box {
+    margin: 0 auto;
+    width: 70%;
+    padding: 0.7rem;
+    border-radius: 2rem;
+    background-color: hsl(218, 20%, 21%);
+}
+.rating-text {
+    font-size: 0.8rem;
+    color: hsl(25, 97%, 53%);
+}
+.thank-you-title {
+    margin: 0.5rem 0;
+}
+
+.hide-card {
+    display: none;
+}
